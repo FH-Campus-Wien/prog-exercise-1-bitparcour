@@ -7,17 +7,53 @@ public class App {
     //todo Task 1
     public void sayHelloWorld(){
         // input your solution here
+
+        System.out.println("Hello World! Yoohee!");
+
+
     }
 
     //todo Task 2
     public void helloRobot(){
         // input your solution here
+String sg=new String();
+        System.out.println("0123456789012345678901");
+        System.out.println("         __");
+        System.out.println("");
+                sg=" _(\\    |@@|";
+        System.out.println(sg);
+        System.out.println("   /\\__ \\--/ __");
+        System.out.println("   \\___|----|  |   __ ");
+        System.out.println("        \\ }{ /\\ )_ / _\\");
+        System.out.println("        /\\__/\\ \\ __o (__");
+        System.out.println("       (--/\\--)");
+        System.out.println("       _)(  )(_");
+        System.out.println("      `---''---`");
+        System.out.println("\n");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
         // input your solution here
+
+        char justone='Z';
+        int hx=0xface;
+        int octal=012;
+        char whatonearth=012;
+        float tort=44e-1f;
+        float kicsi=5.5f;
+        double nekem=8.88e1;
+        float sayninetynine=99.9f;
+        long hosszuu=80L;
+        //System.out.println(justone+"   "+hx+"   "+octal+"   "+whatonearth+"   "+tort+"   "+kicsi+"   "+sayninetynine+"   "+hosszuu);
+    double sum=hx+octal+whatonearth+tort+kicsi+nekem+sayninetynine+hosszuu;
+        System.out.println(sum);
+        System.out.println(sumOfLiterals(););
+
+
+
     }
+
 
     //todo Task 4
     public void addTwoNumbers(){
