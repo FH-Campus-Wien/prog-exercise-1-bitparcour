@@ -113,17 +113,19 @@ String sg=new String();
     //todo Task 8
     public void getCommissionRate(){
         // input your solution here
-
+        System.out.println();
     }
 
     //todo Task 9
     public void leapyear(){
         // input your solution here
+        System.out.println();
     }
 
     //todo Task 10
     public void transposedNumbers(){
         // input your solution here
+        System.out.println();
     }
 
 
