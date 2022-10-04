@@ -8,7 +8,7 @@ public class App {
     public void sayHelloWorld(){
         // input your solution here
 
-        System.out.println("Hello World! Yoohee!");
+        System.out.println("Hello World!");
 
 
     }
@@ -46,11 +46,9 @@ String sg=new String();
         float sayninetynine=99.9f;
         long hosszuu=80L;
         //System.out.println(justone+"   "+hx+"   "+octal+"   "+whatonearth+"   "+tort+"   "+kicsi+"   "+sayninetynine+"   "+hosszuu);
-    double sum=hx+octal+whatonearth+tort+kicsi+nekem+sayninetynine+hosszuu;
+    int sum;
+          sum=(hx)+ (octal)+ ((int) whatonearth)+ ((int) tort)+ ((int) kicsi)+ ((int) nekem)+ ((int) sayninetynine)+((int) hosszuu);
         System.out.println(sum);
-        System.out.println(sumOfLiterals(););
-
-
 
     }
 
@@ -58,26 +56,64 @@ String sg=new String();
     //todo Task 4
     public void addTwoNumbers(){
         // input your solution here
+        Scanner kb=new Scanner(System.in);
+        int zahl= kb.nextInt();
+        //ystem.out.println(zahl);
+        int zahl2= kb.nextInt();
+        //System.out.println(zahl2);
+        System.out.println(zahl+zahl2);
+
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
         // input your solution here
+        int a=7; int b=77;
+        a = a^b^(b = a);
+
+        System.out.println("a = "+ a + " b = "+b) ;
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
+
+        Scanner kb=new Scanner(System.in);
+        int zahl= kb.nextInt();
+        //System.out.println(zahl);
+        int zahl2= kb.nextInt();
+        //System.out.println(zahl2);
+        String rel="";
+            if(zahl>zahl2){
+                rel=">";
+            }
+            else if(zahl<zahl2) {
+                rel = "<";
+            }
+            else {
+                rel = "=";
+            }
+        System.out.println(zahl+rel+zahl2);
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
         // input your solution here
+        System.out.print("Enter annual Revenue: ");
+        Scanner kb=new Scanner(System.in);
+        int Umsatz= kb.nextInt();
+        System.out.println(Umsatz);
+        String rel="";
+
+        if(Umsatz < 0 || Umsatz >= 100000){rel="Invalid Revenue";} else if (0 <= Umsatz &&  Umsatz < 20000){rel="Poor Sales Revenue";} else if (20000 <= Umsatz && Umsatz  < 50000){rel="Average Sales Revenue";} else if (50000 <= Umsatz && Umsatz < 80000){rel="Good Sales Revenue";} else if (80000 <= Umsatz && Umsatz < 100000){rel="Excellent Sales Revenue";}
+
+        System.out.println(rel);
     }
 
     //todo Task 8
     public void getCommissionRate(){
         // input your solution here
+
     }
 
     //todo Task 9
