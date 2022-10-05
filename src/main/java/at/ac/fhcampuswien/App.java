@@ -1,7 +1,7 @@
 package at.ac.fhcampuswien;
 
 import java.util.Scanner;
-import java.util.prefs.PreferenceChangeListener;
+//import java.util.prefs.PreferenceChangeListener;
 
 public class App {
 
@@ -46,8 +46,8 @@ public class App {
         long hosszuu=80L;
         //System.out.println(justone+"   "+hx+"   "+octal+"   "+whatonearth+"   "+tort+"   "+kicsi+"   "+sayninetynine+"   "+hosszuu);
         int sum;
-          sum=10+justone+(hx)+ (octal)+ ((int) whatonearth)+ ((int) tort)+ ((int) kicsi)+ ((int) nekem)+ ((int) sayninetynine)+((int) hosszuu);
-        System.out.print(sum);
+          sum=-10+justone+(hx)+ (octal)+ ((int) whatonearth)+ ((int) tort)+ ((int) kicsi)+ ((int) nekem)+ ((int) sayninetynine)+((int) hosszuu);
+        System.out.println(sum);
 
     }
 
@@ -59,8 +59,9 @@ public class App {
         int zahl= kb.nextInt();
         //ystem.out.println(zahl);
         int zahl2= kb.nextInt();
-        //System.out.println(zahl2);
-        System.out.println(zahl+zahl2);
+        //System.out.println(zahl2)
+        zahl2=zahl+zahl2;
+        System.out.println(zahl2);
 
     }
 
@@ -73,9 +74,11 @@ public class App {
 
 
         System.out.println("Before Swap:");
-        System.out.print("x:");
+        System.out.print("x: ");
+        //String S=kb.next();
         int a= kb.nextInt();
-        System.out.print("y:");
+//        int a=S.valueOf;
+        System.out.print("y: ");
 
         int b= kb.nextInt();
         a = a^b^(b = a);
@@ -84,8 +87,8 @@ public class App {
 
 
         System.out.println("After Swap:");
-        System.out.println("x:"+a);
-        System.out.print("y:"+b);
+        System.out.println("x: "+a);
+        System.out.println("y: "+b);
     }
 
     //todo Task 6
@@ -94,13 +97,13 @@ public class App {
 
         Scanner kb=new Scanner(System.in);
 
-        System.out.print("n1:");
+        System.out.print("n1: ");
         int zahl= kb.nextInt();
         //System.out.println(zahl);
-        System.out.print("n2:");
+        System.out.print("n2: ");
         int zahl2= kb.nextInt();
         //System.out.println(zahl2);
-        String rel="";
+        String rel;
             if(zahl>zahl2){
                 rel="n1 > n2";
             }
@@ -110,7 +113,7 @@ public class App {
             else {
                 rel = "n1 == n2";
             }
-        System.out.print(rel);
+        System.out.println(rel);
     }
 
     //todo Task 7
@@ -122,7 +125,11 @@ public class App {
         //System.out.println(Umsatz);
         String rel="";
 
-        if(Umsatz < 0 || Umsatz >= 100000){rel="Invalid Revenue";} else if (0 <= Umsatz &&  Umsatz < 20000){rel="Poor Sales Revenue";} else if (20000 <= Umsatz && Umsatz  < 50000){rel="Average Sales Revenue";} else if (50000 <= Umsatz && Umsatz < 80000){rel="Good Sales Revenue";} else if (80000 <= Umsatz && Umsatz < 100000){rel="Excellent Sales Revenue";}
+        if(Umsatz < 0 || Umsatz >= 100000){rel="Invalid Revenue";}
+        else if (0 <= Umsatz &&  Umsatz < 20000){rel="Poor Sales Revenue";}
+        else if (20000 <= Umsatz && Umsatz  < 50000){rel="Average Sales Revenue";}
+        else if (50000 <= Umsatz && Umsatz < 80000){rel="Good Sales Revenue";}
+        else if (80000 <= Umsatz && Umsatz < 100000){rel="Excellent Sales Revenue";}
 
         System.out.println(rel);
     }
