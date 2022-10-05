@@ -46,7 +46,7 @@ public class App {
         long hosszuu=80L;
         //System.out.println(justone+"   "+hx+"   "+octal+"   "+whatonearth+"   "+tort+"   "+kicsi+"   "+sayninetynine+"   "+hosszuu);
         int sum;
-          sum=-10+justone+(hx)+ (octal)+ ((int) whatonearth)+ ((int) tort)+ ((int) kicsi)+ ((int) nekem)+ ((int) sayninetynine)+((int) hosszuu);
+          sum=-10+justone+(hx)+ octal+ ((int) whatonearth)+ ((int) tort)+ ((int) kicsi)+ ((int) nekem)+ ((int) sayninetynine)+((int) hosszuu);
         System.out.println(sum);
 
     }
